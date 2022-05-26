@@ -1,1 +1,27 @@
-<p>cart works!</p>
+<div class="container">
+    <div class="row" *ngFor="let CartItem of cart.items">
+
+        <div class="col-4">
+            <img src="{{CartItem.food.imageUrl}}" alt="" style="width: 100%;">
+        </div>
+        <div class="col-2">
+            <h3>food Order</h3>
+            <h4 style="color:rgb(255, 81, 0)">{{CartItem.food.name}}</h4>
+        </div>
+        <div class="col-2">
+            <h3>Quantity</h3>
+            <select class="form-control"></select>
+        </div>
+        <div class="col-2">
+            <h3>Total Price</h3>
+            <h4>{{CartItem.food.price}}.Rs</h4>
+        </div>
+        <div class="col-2">
+            <h3>Remove</h3>
+            <button class="btn btn-primary">remove</button>
+        </div>
+
+
+
+    </div>
+</div>
