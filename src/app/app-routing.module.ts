@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { AboutComponent } from './Components/about/about.component';
+import { CartComponent } from './Components/cart/cart.component';
+import { FoodDetailComponent } from './Components/food-detail/food-detail.component';
 import { HomeComponent } from './Components/home/home.component';
 import { ServiceComponent } from './Components/service/service.component';
 
@@ -10,6 +12,8 @@ const routes: Routes = [
   {path:"",component:HomeComponent},
   {path:"serch/:serchItem",component:HomeComponent},
   {path:"tag/:tag",component:HomeComponent},
+  {path:"food/:id",component:FoodDetailComponent},
+  {path:"cart",component:CartComponent},
   {path:"about",component:AboutComponent},
   {path:"service",component:ServiceComponent},
   {path:"login",component:LoginComponent},

@@ -1,6 +1,12 @@
 .footer {
     padding-top: 88px;
     text-align: center;
+    /* From https://css.glass */
+    background: rgb(42, 40, 40);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.81);
 }
 
 .fa {
@@ -99,7 +105,8 @@
     border-right: none;
 }
 
-@media (min-width: 320px) {
+
+/* @media (min-width: 320px) {
     .footer {
         background-color: rgb(22 30 33);
         height: 200px;
@@ -171,4 +178,4 @@
         padding-bottom: 10px;
         width: 20% !important;
     }
-}
+} */

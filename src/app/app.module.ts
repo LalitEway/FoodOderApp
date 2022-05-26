@@ -13,6 +13,8 @@ import { NavbarComponent } from './Components/navbar/navbar.component';
 import { SerchComponent } from './Components/serch/serch.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TagComponent } from './Components/tag/tag.component';
+import { CartComponent } from './Components/cart/cart.component';
+import { FoodDetailComponent } from './Components/food-detail/food-detail.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { TagComponent } from './Components/tag/tag.component';
     NavbarComponent,
     NavbarComponent,
     SerchComponent,
-    TagComponent
+    TagComponent,
+    CartComponent,
+    FoodDetailComponent
     
   
 

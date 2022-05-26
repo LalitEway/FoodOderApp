@@ -88,6 +88,12 @@ export class FoodlistService {
    
   ];
     }//End of Getallmethode
+
+
+    getFoodById(id:number):Foods{
+      return this.getall().find(food=>food.id==id)!;
+
+    }
     getTags(tag:string): Foods[]{
         return tag =="All"?
          this.getall():this.getall().filter(food=>food.tags ?.

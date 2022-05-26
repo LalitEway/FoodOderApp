@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <img src="{{food.imageUrl}}" alt="" style="width: 100%;border-radius: 20px;position: relative;right: 2%;">
+
+        </div>
+        <div class="col-4 details">
+            <div class="containt">
+                <h3>{{food.name}}</h3>
+                <h5 class="card-title" *ngFor="let origin of food.origins">
+                    {{origin}}</h5>
+                <div class="rating">
+
+                    <star-rating [value]="food.star" [totalstars]="5" checkedcolor="red" uncheckedcolor="black" size="24px" [readonly]="false"> </star-rating>
+
+                </div>
+
+                <h3> Price:{{food.price}}.Rs</h3>
+                <div class="div">
+                    <a href="#" class="btn  Cart-btn">Add to cart</a>
+                    <a href="#" class="btn  Cart-btn">Order</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
