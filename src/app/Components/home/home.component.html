@@ -1,0 +1,46 @@
+<app-header>
+</app-header>
+<div class="container-fluid">
+    <div class="container main">
+
+
+        <div class="container text pt-5">
+            <h3 style="font-family: 'Times New Roman', Times, serif;">Oder Your Choice</h3>
+
+            <p style="text-align:center;">Order food & beverages online from restaurants near & around you. We deliver food from your neighborhood local joints, your favorite cafes. Exciting bit? We place no minimum order restrictions! Order in aslittle (or as much) as you?d like.
+                We?ll FoodOrder it to you!We provide ready to use software for your customers, all you have to do is sell.</p>
+            <p style="font-family: 'Times New Roman', Times, serif;font-size: 2rem;"> Find what you are Looking for in 1 Minute or Less! Unlimited Access</p>
+            <app-serch></app-serch>
+
+        </div>
+
+        <app-tag></app-tag>
+
+
+        <div class="container foodsList pt-5">
+            <div class="row">
+                <div class="card m-3" style="width: 18rem;" *ngFor="let food of foods">
+                    <img class="card-img-top" src="{{food.imageUrl}}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">{{food.name}}</h5>
+                        <div class="rating">
+                            <star-rating [value]="food.star" [totalstars]="5" checkedcolor="red" uncheckedcolor="black" size="24px" [readonly]="false"> </star-rating>
+                            <span class="favorite {{food.favorite?'':'not'}}">♥</span>
+                        </div>
+
+                        <span class="card-title" *ngFor="let origin of food.origins">
+                        {{origin}}</span>
+                        <h6 class="card-title">{{food.price}}.RS</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn  Cart-btn">Add to cart</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<app-footer></app-footer>

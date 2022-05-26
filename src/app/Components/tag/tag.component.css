@@ -1,0 +1,12 @@
+a {
+    background-color: rgba(244, 53, 0, 0.962);
+    color: antiquewhite;
+    font-size: 1rem;
+    margin-left: 5px;
+}
+
+.tag {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}

@@ -1,0 +1,59 @@
+.main {
+    height: auto;
+    /* From https://css.glass */
+    /* From https://css.glass */
+}
+
+.container-fluid {
+    background-color: rgb(255, 255, 255);
+}
+
+.text {
+    text-align: center;
+}
+
+.card {
+    /* From https://css.glass */
+    background: rgba(236, 237, 232, 0.16);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(13.6px);
+    -webkit-backdrop-filter: blur(13.6px);
+    border: 1px solid rgba(236, 237, 232, 0.47);
+}
+
+.foodsList {
+    display: inline-block;
+    align-items: stretch;
+}
+
+.row {
+    position: relative;
+    left: 10%
+}
+
+.Cart-btn {
+    position: relative;
+    left: 30%;
+}
+
+.favorite {
+    color: rgb(246, 91, 40);
+    font-size: 2rem;
+}
+
+.favorite.not {
+    color: rgb(125, 129, 127);
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    background-color: rgb(101, 234, 143);
+    border: none;
+    color: rgb(45, 44, 44);
+    font-size: 1rem;
+}

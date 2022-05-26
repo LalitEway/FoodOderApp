@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: rgb(45, 44, 44);
+    color: #ffff;
+    border: none;
+    font-size: 1rem;
+    transition: 1s;
+}
+
+button:hover {
+    background-color: rgb(101, 234, 143);
+    color: rgb(45, 44, 44);
+}
