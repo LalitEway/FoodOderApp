@@ -9,6 +9,7 @@
 
             <p style="text-align:center;">Order food & beverages online from restaurants near & around you. We deliver food from your neighborhood local joints, your favorite cafes. Exciting bit? We place no minimum order restrictions! Order in aslittle (or as much) as you?d like.
                 We?ll FoodOrder it to you!We provide ready to use software for your customers, all you have to do is sell.</p>
+            <a routerLink="about" class="btn  readmore-btn">Read More</a>
             <p style="font-family: 'Times New Roman', Times, serif;font-size: 2rem;"> Find what you are Looking for in 1 Minute or Less! Unlimited Access</p>
             <app-serch></app-serch>
 
@@ -20,7 +21,7 @@
         <div class="container foodsList pt-5">
             <div class="row">
 
-                <div class="card m-3" style="width: 18rem;" *ngFor="let food of foods">
+                <div class="card m-4" style="width: 20rem;" *ngFor="let food of foods">
                     <a routerLink="/food/{{food.id}}">
                         <img class="card-img-top" src="{{food.imageUrl}}" alt="Card image cap">
                         <div class="card-body">
@@ -44,6 +45,43 @@
         </div>
 
 
+    </div>
+    <div class="container">
+        <div class="row assurance-statement">
+            <div class="col-sm-3">
+                <img src="../../assets/img/icons/icon1.png" alt="">
+                <h3>Better Quality</h3>
+                <p>Praesent pulvinar neque pel lentesque mattis pretium.</p>
+            </div>
+            <div class="col-sm-3">
+                <img src="../../assets/img/icons/icon2.png" alt="">
+                <h3>On Time</h3>
+                <p>Praesent pulvinar neque pel lentesque mattis pretium.</p>
+            </div>
+            <div class="col-sm-3">
+                <img src="../../assets/img/icons/icon3.png" alt="">
+                <h3>MasterChefs</h3>
+                <p>Praesent pulvinar neque pel lentesque mattis pretium.</p>
+            </div>
+            <div class="col-sm-3">
+                <img src="../../assets/img/icons/icon4.png" alt="">
+                <h3>{{'TastyFood' }}</h3>
+                <p>Praesent pulvinar neque pel lentesque mattis pretium.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container  pt-5">
+        <p style="font-family: 'Times New Roman', Times, serif;font-size: 2rem;text-align: center;"> Food Gallery</p>
+        <hr style="width: 200px;border: 1px solid rgb(255, 102, 0);">
+        <div class="row">
+
+            <div class="card m-4" style="width: 20rem;" *ngFor="let food of foods">
+                <a routerLink="/food/{{food.id}}">
+                    <img class="card-img-top" src="{{food.imageUrl}}" alt="Card image cap">
+                </a>
+            </div>
+        </div>
     </div>
 </div>
 <app-footer></app-footer>

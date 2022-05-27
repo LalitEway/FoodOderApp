@@ -29,7 +29,6 @@
 
 .row {
     position: relative;
-    left: 10%
 }
 
 .Cart-btn {
@@ -52,9 +51,35 @@
 }
 
 .btn {
-    background-color: rgb(21, 229, 222);
+    background-color: rgb(246, 91, 40);
     ;
     border: none;
     color: rgb(45, 44, 44);
     font-size: 1rem;
+}
+
+.assurance-statement {
+    text-align: center;
+    padding: 50px 50px;
+    margin-top: 20px;
+}
+
+.assurance-statement div h3 {
+    margin: 10px 0 5px;
+    padding: 0;
+    font-size: 18px;
+    color: #333333;
+    font-weight: 500;
+}
+
+.assurance-statement div p {
+    font-size: 14px;
+    color: #666666;
+    margin: 0;
+    line-height: normal;
+}
+
+.readmore-btn {
+    background-color: #333333;
+    color: #ffff;
 }
