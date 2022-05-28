@@ -6,17 +6,28 @@
         </div>
         <div class="col-4 details">
             <div class="containt">
-                <h3>{{food.name}}</h3>
-                <h5 class="card-title" *ngFor="let origin of food.origins">
-                    {{origin}}</h5>
-                <div class="rating">
+                <div class="content">
+                    <div class="d-flex">
+                        <h3>{{food.name}}</h3>
+                        <div class="like">
+                            <span class="favorite {{food.favorite?'':'not'}}">♥</span>
+                        </div>
+                    </div>
 
-                    <star-rating [value]="food.star" [totalstars]="5" checkedcolor="red" uncheckedcolor="black" size="24px" [readonly]="false"> </star-rating>
+                    <h5 class="card-title" *ngFor="let origin of food.origins">
+                        {{origin}}</h5>
+                    <div class="rating">
 
+                        <star-rating [value]="food.star" [totalstars]="5" checkedcolor="red" uncheckedcolor="black" size="24px" [readonly]="false"> </star-rating>
+
+                    </div>
+
+                    <div class="price pt-3">
+                        <h3> Price:</h3>
+                        <h3> {{food.price}}.Rs</h3>
+                    </div>
                 </div>
-
-                <h3> Price:{{food.price}}.Rs</h3>
-                <div class="div">
+                <div class="div pt-5">
                     <a class="btn  Cart-btn" (click)="addTocart()">Add to cart</a>
                     <a href="#" class="btn  Cart-btn">Order</a>
                 </div>

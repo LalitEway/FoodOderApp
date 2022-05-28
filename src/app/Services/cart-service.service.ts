@@ -11,6 +11,8 @@ export class CartServiceService {
   // Step1
   // Create private Cart 
  private cart:Cart=new Cart();
+ 
+
 // Step2
 // Create AddToCArt methode
 addTocart(food:Foods){
@@ -33,7 +35,10 @@ if(!cartItem)return;
 cartItem.quantity=quantity;
 }
 
+
+
 getCart(){
   return this.cart;
 }
+
 }

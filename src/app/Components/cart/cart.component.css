@@ -1,0 +1,130 @@
+.Cheakout {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    height: 300px;
+}
+
+.Cheakout h4 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.containt {
+    position: relative;
+    top: 10%
+}
+
+h3 {
+    text-align: center;
+}
+
+select {
+    width: 100%
+}
+
+button {
+    background-color: rgb(255, 222, 6);
+    ;
+    color: rgb(44, 40, 40);
+    width: 100%;
+    margin-top: 20%;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.total {
+    display: flex;
+    justify-content: space-around;
+}
+
+h5 {
+    text-align: center;
+}
+
+.Payment {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    height: 300px;
+}
+
+.Payment h4 {
+    text-align: center;
+}
+
+.Payment ul {
+    list-style: none;
+    position: relative;
+    right: 5%;
+}
+
+li a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    background-color: rgba(115, 116, 98, 0.923);
+    margin: 2px;
+    padding: 5px;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.table {
+    text-align: center;
+}
+
+.table th {
+    color: rgb(104, 133, 132);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
+
+.col-8 {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.STYLE {
+    color: rgb(74, 69, 69);
+    font-size: 1.2rem;
+}
+
+.assurance-statement {
+    text-align: center;
+    padding: 50px 50px;
+    margin-top: 20px;
+}
+
+.assurance-statement div h3 {
+    margin: 10px 0 5px;
+    padding: 0;
+    font-size: 18px;
+    color: #333333;
+    font-weight: 500;
+}
+
+.assurance-statement div p {
+    font-size: 14px;
+    color: #666666;
+    margin: 0;
+    line-height: normal;
+}

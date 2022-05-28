@@ -1,27 +1,127 @@
 <div class="container">
-    <div class="row" *ngFor="let CartItem of cart.items">
 
+    <img src="assets/img/slides/S4.png" alt="" style="width:100%">
+
+
+
+    <p class=" pt-3" style="font-family: 'Times New Roman', Times, serif;font-size: 1.5rem;"> Your can see your orders Over Hear</p>
+
+
+
+    <div class="row">
+
+
+        <div class="col-8">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col"><span class="STYLE">Q</span >nt</th>
+                        <th scope="col"><span class="STYLE">F</span >ood</th>
+                        <th scope="col"><span class="STYLE">O</span >rder</th>
+                        <th scope="col"><span class="STYLE">Q</span >uantity</th>
+                        <th scope="col"><span class="STYLE">P</span >rice</th>
+                        <th scope="col"><span class="STYLE">T</span >otal</th>
+                        <th scope="col"><span class="STYLE">R</span >emove</th>
+
+                    </tr>
+                </thead>
+                <tbody *ngFor="let CartItem of cart.items;let i = index">
+                    <tr>
+
+                        <td>{{i+1}}</td>
+                        <td><img src="{{CartItem.food.imageUrl}}" alt="" style="width: 100px;height:100px"></td>
+                        <td>{{CartItem.food.name}}</td>
+                        <td> <select class="form-control w-100" #quantitySelect (change)="changeQuantity(CartItem,quantitySelect.value)">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select></td>
+                        <td>{{CartItem.food.price}}.Rs</td>
+                        <td>{{!quantityNumber? CartItem.food.price * 1 :CartItem.food.price * quantityNumber}}.Rs</td>
+                        <td><button class="btn" (click)="removeFromCart(CartItem)">Remove</button></td>
+                    </tr>
+
+
+
+                </tbody>
+            </table>
+
+
+
+        </div>
         <div class="col-4">
-            <img src="{{CartItem.food.imageUrl}}" alt="" style="width: 100%;">
+
+            <div class="col-12 Cheakout">
+
+                <h4 class="pt-5">Total Orders</h4>
+                <div class="row pt-3">
+
+                    <div class="col-12 total">
+
+                        <h5>Orders</h5>
+                        <h5>{{cart.items.length}}.Qnt</h5>
+                    </div>
+                    <div class="col-12 total">
+
+                        <h5>Price</h5>
+                        <h5>{{quantityNumber?cart.totalPrice * quantityNumber:cart.totalPrice}}.RS</h5>
+                    </div>
+                </div>
+                <button class="btn">Order Now</button>
+            </div>
+            <div class="col-12 Payment">
+                <h4 class="pt-3">Payment methode</h4>
+                <ul class="pt-2">
+                    <li><a href="">Paypal</a></li>
+                    <li><a href="">Upi</a></li>
+                    <li><a href="">GoolePay</a></li>
+                    <li><a href="">PhonePay</a></li>
+
+                </ul>
+
+            </div>
+
         </div>
-        <div class="col-2">
-            <h3>food Order</h3>
-            <h4 style="color:rgb(255, 81, 0)">{{CartItem.food.name}}</h4>
-        </div>
-        <div class="col-2">
-            <h3>Quantity</h3>
-            <select class="form-control"></select>
-        </div>
-        <div class="col-2">
-            <h3>Total Price</h3>
-            <h4>{{CartItem.food.price}}.Rs</h4>
-        </div>
-        <div class="col-2">
-            <h3>Remove</h3>
-            <button class="btn btn-primary">remove</button>
-        </div>
+
+       
+
+
+
+
+
+
 
 
 
     </div>
+
+
+    <div class="container">
+        <div class="row assurance-statement">
+            <div class="col-sm-3">
+                <img src="../../assets/img/icons/icon1.png" alt="">
+                <h3>Better Quality</h3>
+                <p>Praesent pulvinar neque pel lentesque mattis pretium.</p>
+            </div>
+            <div class="col-sm-3">
+                <img src="../../assets/img/icons/icon2.png" alt="">
+                <h3>On Time</h3>
+                <p>Praesent pulvinar neque pel lentesque mattis pretium.</p>
+            </div>
+            <div class="col-sm-3">
+                <img src="../../assets/img/icons/icon3.png" alt="">
+                <h3>MasterChefs</h3>
+                <p>Praesent pulvinar neque pel lentesque mattis pretium.</p>
+            </div>
+            <div class="col-sm-3">
+                <img src="../../assets/img/icons/icon4.png" alt="">
+                <h3>{{'TastyFood' }}</h3>
+                <p>Praesent pulvinar neque pel lentesque mattis pretium.</p>
+            </div>
+        </div>
+    </div>
+
 </div>
+<app-footer></app-footer>

@@ -28,7 +28,7 @@ export class FoodlistService {
 
       },
       {id:2,
-        name:'Potato Corn Burger.',
+        name:'Potato Burger.',
         cookTime:'10-20',
         price:150,
         favorite:false,

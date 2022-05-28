@@ -16,16 +16,18 @@
 }
 
 .btn {
-    background-color: rgb(248, 40, 3);
+    background-color: rgba(248, 40, 3, 0.838);
     ;
     border: none;
     color: rgb(250, 246, 246);
     font-size: 1rem;
     margin-left: 5px;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
+    width: 100%;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 400;
     border-radius: 50px;
+    margin-top: 5px;
 }
 
 .rating {
@@ -41,4 +43,37 @@
 .containt {
     position: relative;
     top: 10%;
+}
+
+.price {
+    display: flex;
+}
+
+.content {
+    position: relative;
+    left: 5%;
+}
+
+.favorite {
+    color: rgb(246, 91, 40);
+    font-size: 2.5rem;
+    position: absolute;
+    left: 10px;
+    bottom: 1px;
+}
+
+.like {
+    background-color: #fff;
+    height: 50px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    width: 50px;
+    position: relative;
+    left: 15%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.favorite.not {
+    color: rgb(125, 129, 127);
 }
